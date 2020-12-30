@@ -1,0 +1,16 @@
+{
+  "name": "Movie-Info",
+  "version": "0.0.1",
+  "description": "A desktop software to search for movie details",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Electron","BrowserWindow","sample"],
+  "author": "Luteya Coulston",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.0.4"
+  }
+}

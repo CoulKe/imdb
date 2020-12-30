@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movies Info</title>
+</head>
+
+<body>
+    <form action="" method="POST" id="form">
+        <h1>Search movie</h1>
+        <hr>
+        <span id="break"></span>
+        <label for="title">Title: </label>
+        <input type="text" id="title" name="t" required>
+        <label for="type">Type: </label>
+        <select name="type" id="type">
+            <option value="movie">movie</option>
+            <option value="series">series</option>
+            <option value="episode">episode</option>
+        </select>
+        <label for="plot">Plot: </label>
+        <select name="plot" id="plot">
+            <option value="short">short</option>
+            <option value="full">full</option>
+        </select>
+        <br>
+        <label for="year">Year: </label>
+        <input type="number" id="year" name="y">
+        <br>
+        <input type="submit" id="search" value="Search">
+    </form>
+    <div id="movie_details"></div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
