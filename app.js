@@ -1,3 +1,4 @@
+let apiKey = ''/*Put your api key here*/;
 let details = document.querySelector("#movie_details");
 let result = "";
 //parameters
@@ -20,8 +21,6 @@ search.addEventListener("click", function (e) {
 });
 
 function searchMovie() {
-  let apiKey = "b89d48cc";
-
   let xhr = new XMLHttpRequest();
   xhr.open(
     "POST",
