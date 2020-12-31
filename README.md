@@ -5,7 +5,7 @@ It fetches data from from omdbapi and displays movie data according to search qu
 ## SETUP
 Run ``` npm install ``` to install all the dependecies
 
-Go to [omdb] ('http://www.omdbapi.com') to get your api key and put it inside the app.js file at the top
+Go to [omdb]('http://www.omdbapi.com') to get your api key and put it inside the app.js file at the top
 
 Run ``` npm start ``` to run the app
 
