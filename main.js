@@ -27,7 +27,7 @@ function createWindow() {
     },
   });
   mainWindow.loadFile(`${__dirname}/index.html`);
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 }
 app.whenReady().then(() => {
   const menu = Menu.buildFromTemplate(template);
