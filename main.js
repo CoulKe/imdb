@@ -27,6 +27,7 @@ function createWindow() {
     },
   });
   mainWindow.loadFile(`${__dirname}/index.html`);
+  mainWindow.setIcon('./assets/win/icon.ico')
   // mainWindow.webContents.openDevTools();
 }
 app.whenReady().then(() => {

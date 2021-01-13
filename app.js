@@ -27,6 +27,14 @@ function searchMovie() {
     `http://www.omdbapi.com/?t=${title.value}
     &type=${type.value}&plot=${plot.value}&y=${year.value}&apikey=${apiKey}`
   );
+  xhr.onprogress = function(){
+    let loader = document.querySelector('#movie_details');
+    loader.innerHTML = `
+    <img src="./assets/win/Spinner-0.6s-200px.svg"
+    alt="Loading">
+    <p style="text-align: center; font-weight: bold;">Loading...</p>
+    `;
+  }
   xhr.onload = function () {
     if (this.status === 200) {
       let data = [];

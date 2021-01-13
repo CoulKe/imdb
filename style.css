@@ -8,6 +8,11 @@ body {
     height: auto;
     margin: auto;
   }
+  #movie_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   h1 {
     margin-bottom: 0;
     text-align: center;
