@@ -1,4 +1,4 @@
-let apiKey = 'b89d48cc'/*Put your api key here*/;
+let apiKey = ''/*Put your api key here*/;
 let details = document.querySelector("#movie_details");
 let result = "";
 //parameters
