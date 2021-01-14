@@ -2,6 +2,9 @@
 This software is made purposely for practice and there's only a windows setup.
 It fetches data from from omdbapi and displays movie data according to search queries.
 
+## DEMO
+![Movie info demo](demo.gif)
+
 ## SETUP
 Run ``` npm install ``` to install all the dependecies
 

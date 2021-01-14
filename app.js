@@ -1,4 +1,4 @@
-let apiKey = ''/*Put your api key here*/;
+let apiKey = 'b89d48cc'/*Put your api key here*/;
 let details = document.querySelector("#movie_details");
 let result = "";
 //parameters
@@ -33,6 +33,15 @@ function searchMovie() {
     <img src="./assets/win/Spinner-0.6s-200px.svg"
     alt="Loading">
     <p style="text-align: center; font-weight: bold;">Loading...</p>
+    `;
+  }
+  xhr.timeout = 10000;
+  xhr.ontimeout = function (){
+    let loader = document.querySelector('#movie_details');
+    loader.innerHTML = `
+    <h1>Oops</h1>
+    <p>It's taking unexpectedly long, check your connection or try to be more
+    specific with your search.</p>
     `;
   }
   xhr.onload = function () {
